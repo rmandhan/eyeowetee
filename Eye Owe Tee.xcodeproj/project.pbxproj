@@ -12,6 +12,7 @@
 		142119A5205055460026E68A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142119A3205055460026E68A /* Main.storyboard */; };
 		142119A7205055460026E68A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142119A6205055460026E68A /* Assets.xcassets */; };
 		142119AA205055460026E68A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142119A8205055460026E68A /* LaunchScreen.storyboard */; };
+		1483028720573E9F00CFAA26 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483028620573E9F00CFAA26 /* GridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		142119A6205055460026E68A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		142119A9205055460026E68A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		142119AB205055460026E68A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1483028620573E9F00CFAA26 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +58,9 @@
 			children = (
 				1421199F205055460026E68A /* AppDelegate.swift */,
 				142119A1205055460026E68A /* ViewController.swift */,
-				142119A3205055460026E68A /* Main.storyboard */,
+				1483028620573E9F00CFAA26 /* GridView.swift */,
 				142119A6205055460026E68A /* Assets.xcassets */,
+				142119A3205055460026E68A /* Main.storyboard */,
 				142119A8205055460026E68A /* LaunchScreen.storyboard */,
 				142119AB205055460026E68A /* Info.plist */,
 			);
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				142119A2205055460026E68A /* ViewController.swift in Sources */,
+				1483028720573E9F00CFAA26 /* GridView.swift in Sources */,
 				142119A0205055460026E68A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
