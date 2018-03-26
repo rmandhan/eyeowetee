@@ -20,6 +20,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // TEMP
+        let triangle = Triangulate()
+        triangle.triangulate()
+        
         debugView.isHidden = true
         locationManager.delegate = self
         if (CLLocationManager.authorizationStatus() != .authorizedWhenInUse) {

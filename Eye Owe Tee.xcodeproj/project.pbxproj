@@ -13,6 +13,9 @@
 		142119A7205055460026E68A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142119A6205055460026E68A /* Assets.xcassets */; };
 		142119AA205055460026E68A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142119A8205055460026E68A /* LaunchScreen.storyboard */; };
 		1483028720573E9F00CFAA26 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483028620573E9F00CFAA26 /* GridView.swift */; };
+		149404BC2068C2F100C32A87 /* Triangulate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 149404BB2068C2F100C32A87 /* Triangulate.mm */; };
+		14B462852068BD5D008BEBC1 /* trilateration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14B462832068BD5D008BEBC1 /* trilateration.cpp */; };
+		14B462882068BD7B008BEBC1 /* beacon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14B462862068BD7B008BEBC1 /* beacon.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,13 @@
 		142119A9205055460026E68A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		142119AB205055460026E68A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1483028620573E9F00CFAA26 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		149404BA2068C01D00C32A87 /* Eye Owe Tee-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eye Owe Tee-Bridging-Header.h"; sourceTree = "<group>"; };
+		149404BB2068C2F100C32A87 /* Triangulate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Triangulate.mm; sourceTree = "<group>"; };
+		149404BD2068C31E00C32A87 /* Triangulate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Triangulate.h; sourceTree = "<group>"; };
+		14B462832068BD5D008BEBC1 /* trilateration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = trilateration.cpp; sourceTree = "<group>"; };
+		14B462842068BD5D008BEBC1 /* trilateration.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = trilateration.hpp; sourceTree = "<group>"; };
+		14B462862068BD7B008BEBC1 /* beacon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = beacon.cpp; sourceTree = "<group>"; };
+		14B462872068BD7B008BEBC1 /* beacon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = beacon.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,46 @@
 		1421199E205055460026E68A /* Eye Owe Tee */ = {
 			isa = PBXGroup;
 			children = (
-				1421199F205055460026E68A /* AppDelegate.swift */,
-				142119A1205055460026E68A /* ViewController.swift */,
-				1483028620573E9F00CFAA26 /* GridView.swift */,
+				149404BA2068C01D00C32A87 /* Eye Owe Tee-Bridging-Header.h */,
+				14B4628A2068BE5D008BEBC1 /* Main */,
+				14B462892068BE25008BEBC1 /* Navigine Trilateration Algorithm */,
+				149404B32068BE7200C32A87 /* Storyboards */,
 				142119A6205055460026E68A /* Assets.xcassets */,
-				142119A3205055460026E68A /* Main.storyboard */,
-				142119A8205055460026E68A /* LaunchScreen.storyboard */,
 				142119AB205055460026E68A /* Info.plist */,
 			);
 			path = "Eye Owe Tee";
+			sourceTree = "<group>";
+		};
+		149404B32068BE7200C32A87 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				142119A3205055460026E68A /* Main.storyboard */,
+				142119A8205055460026E68A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		14B462892068BE25008BEBC1 /* Navigine Trilateration Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				14B462832068BD5D008BEBC1 /* trilateration.cpp */,
+				14B462842068BD5D008BEBC1 /* trilateration.hpp */,
+				14B462862068BD7B008BEBC1 /* beacon.cpp */,
+				14B462872068BD7B008BEBC1 /* beacon.hpp */,
+			);
+			path = "Navigine Trilateration Algorithm";
+			sourceTree = "<group>";
+		};
+		14B4628A2068BE5D008BEBC1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1421199F205055460026E68A /* AppDelegate.swift */,
+				142119A1205055460026E68A /* ViewController.swift */,
+				1483028620573E9F00CFAA26 /* GridView.swift */,
+				149404BB2068C2F100C32A87 /* Triangulate.mm */,
+				149404BD2068C31E00C32A87 /* Triangulate.h */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +140,7 @@
 				TargetAttributes = {
 					1421199B205055460026E68A = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,9 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				149404BC2068C2F100C32A87 /* Triangulate.mm in Sources */,
+				14B462852068BD5D008BEBC1 /* trilateration.cpp in Sources */,
 				142119A2205055460026E68A /* ViewController.swift in Sources */,
 				1483028720573E9F00CFAA26 /* GridView.swift in Sources */,
 				142119A0205055460026E68A /* AppDelegate.swift in Sources */,
+				14B462882068BD7B008BEBC1 /* beacon.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,12 +323,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5YU575SWFM;
 				INFOPLIST_FILE = "Eye Owe Tee/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rakeshmandhan.Eye-Owe-Tee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Eye Owe Tee/Eye Owe Tee-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -293,12 +341,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5YU575SWFM;
 				INFOPLIST_FILE = "Eye Owe Tee/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rakeshmandhan.Eye-Owe-Tee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Eye Owe Tee/Eye Owe Tee-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
